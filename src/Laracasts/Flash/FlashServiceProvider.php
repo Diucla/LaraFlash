@@ -20,6 +20,9 @@ class FlashServiceProvider extends ServiceProvider
      */
     public function register()
     {
+
+        var_dump('REGISTERING');
+
         $this->app->bind(
             'Laracasts\Flash\SessionStore',
             'Laracasts\Flash\LaravelSessionStore'
